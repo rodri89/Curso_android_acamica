@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Curso_android_acamica</string>
+    <string name="action_favourite">favorito</string>
+    <string name="action_settings">setting</string>
+    <string name="action_search">search</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello rodrigo blank fragment</string>
+</resources>
+
