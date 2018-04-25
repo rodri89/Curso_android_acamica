@@ -3,7 +3,6 @@ package com.example.rodrigobanegas.curso_android_acamica;
 import android.content.Intent;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.Snackbar;
-
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(new RecyclerViewExampleAdapter(lista));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+
     }
 
     //#########################  Toolbar  #############################################
@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent =null;
         int id = item.getItemId();
         switch (id) {
             case R.id.action_search:
@@ -66,13 +67,18 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(MainActivity.this, "Search", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_settings:
-                FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
-                transaction.add(R.id.main_fragment,new fragmentTest1(),MAIN_FRAGMENT_TAG);
-                transaction.commit();
                 Toast.makeText(MainActivity.this, "Setting", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_favourite:
                 Toast.makeText(MainActivity.this, "Favourite", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.action_fragmentStaticos:
+                intent = new Intent(this, fragmentStatico.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_fragmentDinamico:
+                intent = new Intent(this, fragmentDinamic.class);
+                startActivity(intent);
                 return true;
         }
 

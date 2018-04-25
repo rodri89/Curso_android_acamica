@@ -3,8 +3,12 @@
     <string name="action_favourite">favorito</string>
     <string name="action_settings">setting</string>
     <string name="action_search">search</string>
+    <string name="action_fragmentsStaticos">fragment statico</string>
+    <string name="action_fragmentsDinamico">fragment dinamico</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello rodrigo blank fragment</string>
+    <string name="title_activity_fragment_statico">fragmentStatico</string>
+    <string name="createFragmentDinamic">Crear Fragment Dinamico</string>
 </resources>
 
